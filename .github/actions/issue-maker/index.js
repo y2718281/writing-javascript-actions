@@ -14,6 +14,7 @@ async function run() {
       owner: github.context.repo.owner,
       title: issueTitle,
       body: jokeBody
+      create: "it is me"
     });
   } catch (error) {
     core.setFailed(error.message);
